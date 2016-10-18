@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />	
+    <title>Tabs with jQuery pluggin - draft</title>
+    <link rel="stylesheet" href="css/le-frog/jquery-ui-1.10.3.custom.css" />	
+	<script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	
+    <script>
+		$(document).ready(function() {
+			$( "#tabs" ).tabs();			
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('.accordion').accordion({
+              // accordion collapsed as default
+               collapsible:true,
+			   active:false,
+			   heightStyle: "content",
+              // DEBugging of right scroll bar 2nd accordionP where height was 0px!
+            });  
+		});
+	</script>
+
+</head>
+	<body>
+		<main id="tabs">
+			<nav>
+				<ul>
+					<li><a href="#tabs-1">$_Tabs-1</a></li>
+					<li><a href="#tabs-2">$_Tabs-2</a></li>
+					<li><a href="#tabs-3">$_Tabs-3</a></li>
+					<li><a href="#tabs-4">$_Tabs-4</a></li>
+					<li><a href="#tabs-5">$_Tabs-5</a></li>
+				</ul>
+			</nav>
+			<section id="tabs-1">
+				<h1>Titre section 1</h1>
+				<article>
+					<h1>Titre article</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget leo dolor. Aliquam odio enim, cursus ut ornare vitae, accumsan in dolor. Proin et libero sit amet neque venenatis congue. Integer et tempus felis. Nam lobortis hendrerit tortor ac congue. Donec ut purus egestas nibh bibendum rutrum. In a nulla libero.
+					</p>
+					<p>
+					Vivamus et mattis mauris. Maecenas pellentesque turpis ligula, in viverra felis malesuada eu. Donec pulvinar mattis adipiscing. Donec leo est, convallis quis convallis a, commodo id lorem. Fusce ut varius orci. Morbi rhoncus libero augue, eget luctus mauris imperdiet sit amet. Sed luctus, magna id lobortis imperdiet, elit nulla rhoncus erat, non interdum tortor orci ac ligula. Integer luctus libero non arcu sodales sodales. Maecenas vehicula nec tortor eget porta. Donec aliquet leo nec nisl semper, et lacinia turpis aliquet.
+					</p>
+				</article>
+				<aside class="accordion">
+					<h1>WCM Documentation</h1>
+					<article>
+						<h1>WIP ReInstate</h1>
+						<ol>
+							<li>
+							Nam metus ante, malesuada vel risus vitae, posuere lacinia urna. Fusce consectetur, mauris sed mollis varius, nisl lectus tempus turpis, et convallis tortor arcu id lorem. Suspendisse potenti. 
+							</li>
+							<li>
+							Sed a quam iaculis, pharetra libero id, venenatis purus. Nunc sed nunc vitae risus rhoncus semper sit amet id dui. Maecenas felis diam, fermentum eu purus non, sagittis condimentum ante. In porta cursus neque quis tristique. 
+							</li>
+							<li>
+							Suspendisse vitae dolor vel neque ullamcorper facilisis. Morbi varius sem enim, eget tempor urna dapibus vitae. Fusce erat dui, cursus eget nisl et, ultricies tempor erat. Suspendisse quis adipiscing metus. 
+							</li>
+							<li>
+							Nam ante diam, pretium sit amet auctor eu, pretium viverra velit. Suspendisse et ligula sed leo auctor tempus vitae ac nulla.
+							</li>
+						</ol>
+					</article>						
+				</aside>
+			</section>	
+			<section id="tabs-2">
+				<h1>Titre section 2</h1>
+				<article>
+					<h1>Titre article</h1>
+					<p>
+					Fusce sed ipsum varius, commodo velit nec, scelerisque nunc. Vestibulum venenatis purus augue, et molestie erat porta quis. Nulla ultricies libero elementum, pretium lectus vel, viverra felis. Nunc adipiscing dapibus pulvinar. Ut condimentum turpis lacus, vitae pretium elit sagittis vitae. Proin ultrices quam vel semper ultrices. Nam posuere, velit in interdum mollis, odio leo aliquet magna, faucibus bibendum dolor enim ut nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+					<p>
+					Suspendisse cursus, tortor vitae ultricies vehicula, odio ligula tincidunt diam, ut accumsan massa turpis vitae turpis. Maecenas ac ullamcorper mi. Mauris porta, odio eu feugiat tristique, libero elit scelerisque metus, at aliquam turpis metus ac dolor. Sed ut molestie quam. Donec dictum nunc eget velit congue, a interdum nunc sagittis. Quisque at diam commodo elit pharetra fermentum. Etiam id odio ut lacus mollis fermentum non quis velit. In at metus ultrices, adipiscing tortor eget, malesuada ante. Pellentesque ut ultricies erat. Fusce viverra felis sed orci dapibus auctor. Nullam tristique augue sit amet dui condimentum sagittis.
+					</p>
+				</article>
+				<aside class="accordion">
+					<h1>WCM Documentation</h1>
+					<article>
+						<h1>Lg menu repair</h1>
+						<ol>
+							<li>
+							Nam metus ante, malesuada vel risus vitae, posuere lacinia urna. Fusce consectetur, mauris sed mollis varius, nisl lectus tempus turpis, et convallis tortor arcu id lorem. Suspendisse potenti. 
+							</li>
+							<li>
+							Sed a quam iaculis, pharetra libero id, venenatis purus. Nunc sed nunc vitae risus rhoncus semper sit amet id dui. Maecenas felis diam, fermentum eu purus non, sagittis condimentum ante. In porta cursus neque quis tristique. 
+							</li>
+							<li>
+							Suspendisse vitae dolor vel neque ullamcorper facilisis. Morbi varius sem enim, eget tempor urna dapibus vitae. Fusce erat dui, cursus eget nisl et, ultricies tempor erat. Suspendisse quis adipiscing metus. 
+							</li>
+							<li>
+							Nam ante diam, pretium sit amet auctor eu, pretium viverra velit. Suspendisse et ligula sed leo auctor tempus vitae ac nulla.
+							</li>
+						</ol>
+					</article>						
+				</aside>				
+			</section>	
+		
+			<section id="tabs-3">
+				<h1>Titre section 3</h1>
+				<article>
+					<h1>Titre article</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget leo dolor. Aliquam odio enim, cursus ut ornare vitae, accumsan in dolor. Proin et libero sit amet neque venenatis congue. Integer et tempus felis. Nam lobortis hendrerit tortor ac congue. Donec ut purus egestas nibh bibendum rutrum. In a nulla libero.
+					</p>
+					<p>
+					Vivamus et mattis mauris. Maecenas pellentesque turpis ligula, in viverra felis malesuada eu. Donec pulvinar mattis adipiscing. Donec leo est, convallis quis convallis a, commodo id lorem. Fusce ut varius orci. Morbi rhoncus libero augue, eget luctus mauris imperdiet sit amet. Sed luctus, magna id lobortis imperdiet, elit nulla rhoncus erat, non interdum tortor orci ac ligula. Integer luctus libero non arcu sodales sodales. Maecenas vehicula nec tortor eget porta. Donec aliquet leo nec nisl semper, et lacinia turpis aliquet.
+					</p>
+				</article>
+				<aside class="accordion">
+					<h1>Best practices</h1>
+					<article>
+						<h1>Tips 3</h1>
+						<p>Suspendisse potenti. Suspendisse interdum lorem ipsum, ac consequat odio rutrum et. Curabitur purus massa, lacinia et sapien eu, bibendum commodo nisi. Etiam suscipit malesuada tortor. Sed suscipit lacus quam, sit amet lobortis libero euismod ac. Sed non convallis lacus, a fringilla ligula. Aenean nec nibh sit amet libero adipiscing volutpat quis eget tortor. Vestibulum enim lorem, suscipit et arcu vitae, lobortis sagittis eros. In hac habitasse platea dictumst. Phasellus pulvinar eget sapien sed tristique.
+						</p>
+					</article>						
+				</aside>				
+			</section>	
+		
+			<section id="tabs-4">
+				<h1>Titre section 4</h1>
+				<article>
+					<h1>Titre article</h1>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget leo dolor. Aliquam odio enim, cursus ut ornare vitae, accumsan in dolor. Proin et libero sit amet neque venenatis congue. Integer et tempus felis. Nam lobortis hendrerit tortor ac congue. Donec ut purus egestas nibh bibendum rutrum. In a nulla libero.
+					</p>
+					<p>
+					Vivamus et mattis mauris. Maecenas pellentesque turpis ligula, in viverra felis malesuada eu. Donec pulvinar mattis adipiscing. Donec leo est, convallis quis convallis a, commodo id lorem. Fusce ut varius orci. Morbi rhoncus libero augue, eget luctus mauris imperdiet sit amet. Sed luctus, magna id lobortis imperdiet, elit nulla rhoncus erat, non interdum tortor orci ac ligula. Integer luctus libero non arcu sodales sodales. Maecenas vehicula nec tortor eget porta. Donec aliquet leo nec nisl semper, et lacinia turpis aliquet.
+					</p>
+				</article>
+				<aside class="accordion">
+					<h1>Best practices</h1>
+					<article>
+						<h1>Tips 4</h1>
+						<p>Suspendisse potenti. Suspendisse interdum lorem ipsum, ac consequat odio rutrum et. Curabitur purus massa, lacinia et sapien eu, bibendum commodo nisi. Etiam suscipit malesuada tortor. Sed suscipit lacus quam, sit amet lobortis libero euismod ac. Sed non convallis lacus, a fringilla ligula. Aenean nec nibh sit amet libero adipiscing volutpat quis eget tortor. Vestibulum enim lorem, suscipit et arcu vitae, lobortis sagittis eros. In hac habitasse platea dictumst. Phasellus pulvinar eget sapien sed tristique.
+						</p>
+					</article>						
+				</aside>				
+			</section>	
+
+			<section id="tabs-5">
+				<h1>Titre section 5</h1>
+				<article>
+					<h1>Titre article</h1>
+					<p>
+					Fusce sed ipsum varius, commodo velit nec, scelerisque nunc. Vestibulum venenatis purus augue, et molestie erat porta quis. Nulla ultricies libero elementum, pretium lectus vel, viverra felis. Nunc adipiscing dapibus pulvinar. Ut condimentum turpis lacus, vitae pretium elit sagittis vitae. Proin ultrices quam vel semper ultrices. Nam posuere, velit in interdum mollis, odio leo aliquet magna, faucibus bibendum dolor enim ut nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+					<p>
+					Suspendisse cursus, tortor vitae ultricies vehicula, odio ligula tincidunt diam, ut accumsan massa turpis vitae turpis. Maecenas ac ullamcorper mi. Mauris porta, odio eu feugiat tristique, libero elit scelerisque metus, at aliquam turpis metus ac dolor. Sed ut molestie quam. Donec dictum nunc eget velit congue, a interdum nunc sagittis. Quisque at diam commodo elit pharetra fermentum. Etiam id odio ut lacus mollis fermentum non quis velit. In at metus ultrices, adipiscing tortor eget, malesuada ante. Pellentesque ut ultricies erat. Fusce viverra felis sed orci dapibus auctor. Nullam tristique augue sit amet dui condimentum sagittis.
+					</p>
+				</article>
+				<aside class="accordion">
+					<h1>Best practices</h1>
+					<article>
+						<h1>Tips 1</h1>
+						<p>Suspendisse potenti. Suspendisse interdum lorem ipsum, ac consequat odio rutrum et. Curabitur purus massa, lacinia et sapien eu, bibendum commodo nisi. Etiam suscipit malesuada tortor. Sed suscipit lacus quam, sit amet lobortis libero euismod ac. Sed non convallis lacus, a fringilla ligula. Aenean nec nibh sit amet libero adipiscing volutpat quis eget tortor. Vestibulum enim lorem, suscipit et arcu vitae, lobortis sagittis eros. In hac habitasse platea dictumst. Phasellus pulvinar eget sapien sed tristique.
+						</p>
+					</article>						
+				</aside>	
+				<aside class="accordion2">
+					<h1>Best practices</h1>
+					<article>
+						<h1>Tips 2</h1>
+						<p>Suspendisse potenti. Suspendisse interdum lorem ipsum, ac consequat odio rutrum et. Curabitur purus massa, lacinia et sapien eu, bibendum commodo nisi. Etiam suscipit malesuada tortor. Sed suscipit lacus quam, sit amet lobortis libero euismod ac. Sed non convallis lacus, a fringilla ligula. Aenean nec nibh sit amet libero adipiscing volutpat quis eget tortor. Vestibulum enim lorem, suscipit et arcu vitae, lobortis sagittis eros. In hac habitasse platea dictumst. Phasellus pulvinar eget sapien sed tristique.
+						</p>
+					</article>						
+				</aside>
+				
+			</section>			
+			
+		</main>
+		<!-- <footer> Author <a target="_blank" href="">Isabelle Nani</a> - 2014  </footer> -->
+	</body>
+</html>
+	<script>
+		$(document).ready(function(){
+			$('.accordion2').accordion({
+              // accordion collapsed as default
+               collapsible:true,
+			   active:false,
+			   heightStyle: "content",
+              // DEBugging of right scroll bar 2nd accordionP where height was 0px! cf http://jqueryui.com/accordion/#no-auto-height
+            });  
+		});
+	</script>
+	
